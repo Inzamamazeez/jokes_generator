@@ -1,0 +1,189 @@
+.grid_cntnr{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ gap: 40px;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 0.375rem;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    border: 2px solid #e5e7eb;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    height: 240px;
+    /* width: 160px; */
+}
+
+.card:hover{
+    border: none;
+}
+
+.card section{
+    padding: 5rem 1rem;
+    color: #1e3a8a;
+
+}
+
+.card h1{
+    margin-top: -10px;
+    font-size: 34px;
+}
+
+.unlimited{
+    margin-top: -20px;
+}
+
+
+.popUpBox{
+    border: 2px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    background-color: #1a3139;
+    color: #fff;
+    border-radius: 13px;
+    border: 2px solid #1a3139;
+}
+
+.opac{
+    filter: opacity(0.5);
+}
+
+.contentBox{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.contentBox div{
+   
+    padding-bottom: 1rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: #dbeafe;
+}
+
+.chuck {
+    color: #22c55e;
+    position: relative;
+    font-size: 36px;
+    animation: heading 0.5s infinite alternate ease-in-out; /* Use alternate to smoothly transition between two positions */
+  }
+  
+  @keyframes heading {
+    0% {
+      transform: translateY(0); /* Start at the current position */
+    }
+    100% {
+      transform: translateY(10px); /* End at a higher position */
+    }
+  }
+  
+
+
+.contentBox button{
+    padding: 5px;
+    width: 20rem;
+    font-size: 20px;
+    background-color: #1d4ed8;
+    border: none;
+    cursor: pointer;
+}
+
+.cross{
+    position: absolute;
+    right: 10px;
+    top: -2rem;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.heading{
+    text-transform: capitalize;
+    /* margin-top: -17px; */
+    position: relative;
+    bottom: 31px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.relative{
+    position: relative;
+}
+
+@media (min-width:769px) and (max-width:1300px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sub_container{
+        width: 50%;
+    }
+
+    .grid_cntnr{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:280px) and (max-width:770px){
+    .unlimited{
+        display: none;
+    }
+
+    .card{
+            /* padding-bottom: 0; */
+    height: max-content;
+    padding: 0 5px;
+    padding-top: 4px;
+    
+    }
+
+    .card section{
+        padding: 0;
+    }
+
+    .card h1{
+        font-size: 16px;
+    margin-top: 0;
+    }
+
+    .grid_cntnr{
+        grid-template-columns: auto auto auto auto;
+        gap: 20px;
+    }
+
+    .container{
+        display: flex;
+    justify-content: center;
+    }
+
+    .popUpBox{
+        width: 99vw;
+        padding: 3rem 1rem;
+        box-sizing: border-box;
+        top: 70%;
+        transform: translate(-50%,-42%);
+    }
+
+    .heading{
+        font-size: 20px;
+        bottom: 18px;
+    }
+
+    .contentBox div{
+        font-size: 18px;
+    }
+
+    .contentBox button{
+        width: 95%;
+    }
+
+    .chuck{
+        margin-top: -10px;
+    }
+}
