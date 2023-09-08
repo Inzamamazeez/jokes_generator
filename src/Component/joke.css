@@ -154,7 +154,7 @@
 
     .grid_cntnr{
         grid-template-columns: auto auto auto auto;
-        gap: 20px;
+        gap: 12px;
     }
 
     .container{
